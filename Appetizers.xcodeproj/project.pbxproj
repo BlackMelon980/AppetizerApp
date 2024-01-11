@@ -20,6 +20,8 @@
 		989F54522B4EDBB80098E63C /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F54512B4EDBB80098E63C /* APError.swift */; };
 		989F54542B4EEF560098E63C /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F54532B4EEF560098E63C /* AppetizerListViewModel.swift */; };
 		989F54562B4EF1E20098E63C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F54552B4EF1E20098E63C /* Alert.swift */; };
+		989F54582B4FFC8A0098E63C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F54572B4FFC8A0098E63C /* LoadingView.swift */; };
+		989F545A2B4FFE0D0098E63C /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F54592B4FFE0D0098E63C /* Color+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		989F54512B4EDBB80098E63C /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		989F54532B4EEF560098E63C /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		989F54552B4EF1E20098E63C /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		989F54572B4FFC8A0098E63C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		989F54592B4FFE0D0098E63C /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				989F54512B4EDBB80098E63C /* APError.swift */,
 				989F54532B4EEF560098E63C /* AppetizerListViewModel.swift */,
 				989F54552B4EF1E20098E63C /* Alert.swift */,
+				989F54572B4FFC8A0098E63C /* LoadingView.swift */,
+				989F54592B4FFE0D0098E63C /* Color+Ext.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -168,7 +174,9 @@
 				989F54522B4EDBB80098E63C /* APError.swift in Sources */,
 				989F544E2B4EBE100098E63C /* AppetizerListCell.swift in Sources */,
 				989F54542B4EEF560098E63C /* AppetizerListViewModel.swift in Sources */,
+				989F545A2B4FFE0D0098E63C /* Color+Ext.swift in Sources */,
 				989F54482B4EA4B30098E63C /* AccountView.swift in Sources */,
+				989F54582B4FFC8A0098E63C /* LoadingView.swift in Sources */,
 				989F543A2B4EA00B0098E63C /* AppetizerTabView.swift in Sources */,
 				989F54502B4ED8B80098E63C /* NetworkManager.swift in Sources */,
 				989F54382B4EA00B0098E63C /* AppetizersApp.swift in Sources */,
