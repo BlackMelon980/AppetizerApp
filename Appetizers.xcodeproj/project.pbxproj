@@ -30,6 +30,7 @@
 		989F54742B554E430098E63C /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F54732B554E430098E63C /* String+Ext.swift */; };
 		989F54762B554FD10098E63C /* FormError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F54752B554FD10098E63C /* FormError.swift */; };
 		989F54782B5554700098E63C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F54772B5554700098E63C /* User.swift */; };
+		989F547A2B556CEC0098E63C /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F54792B556CEC0098E63C /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		989F54732B554E430098E63C /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		989F54752B554FD10098E63C /* FormError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormError.swift; sourceTree = "<group>"; };
 		989F54772B5554700098E63C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		989F54792B556CEC0098E63C /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				989F54492B4EA4CD0098E63C /* OrderView.swift */,
+				989F54792B556CEC0098E63C /* OrderListViewModel.swift */,
 			);
 			path = OrderView;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				989F544C2B4EB6AC0098E63C /* Appetizer.swift in Sources */,
 				989F54522B4EDBB80098E63C /* APError.swift in Sources */,
 				989F54702B5069C80098E63C /* XDismissButton.swift in Sources */,
+				989F547A2B556CEC0098E63C /* OrderListViewModel.swift in Sources */,
 				989F544E2B4EBE100098E63C /* AppetizerListCell.swift in Sources */,
 				989F54722B554CE60098E63C /* AccountViewModel.swift in Sources */,
 				989F546B2B502FEE0098E63C /* AppetizerDetailView.swift in Sources */,
