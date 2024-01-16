@@ -13,7 +13,7 @@ final class ImageLoader: ObservableObject {
     
     func load(fromURLString urlString: String) {
         NetworkManager.shared.downloadImage(fromURLString: urlString) { uiImage in
-            guard let uiImage = uiImage else { return }
+            guard let uiImage else { return }
             DispatchQueue.main.async {
                 self.image = Image(uiImage: uiImage)
             }
@@ -35,10 +35,10 @@ struct RemoteImage: View {
 struct AppetizerRemoteImage: View {
     
     @StateObject var imageLoader = ImageLoader()
-    let ulrString: String
+    let urlString: String
     
     var body: some View {
         RemoteImage(image: imageLoader.image)
-            .onAppear { imageLoader.load(fromURLString: ulrString) }
+            .onAppear { imageLoader.load(fromURLString: urlString) }
     }
 }

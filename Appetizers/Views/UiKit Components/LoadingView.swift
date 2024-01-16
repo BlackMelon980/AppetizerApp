@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/*
 struct ActivityIndicator: UIViewRepresentable {
     func makeUIView(context: Context) -> UIActivityIndicatorView {
         let activityIndicatorView = UIActivityIndicatorView(style: .large)
@@ -17,14 +18,17 @@ struct ActivityIndicator: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {}
-}
+}*/
 
 struct LoadingView: View {
     var body: some View {
         ZStack {
             Color(.systemBackground)
                 .ignoresSafeArea()
-            ActivityIndicator()
+            
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle(tint: .brandPrimary))
+                .scaleEffect(2)
         }
     }
 }
