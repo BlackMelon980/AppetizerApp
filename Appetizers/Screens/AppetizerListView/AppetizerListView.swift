@@ -8,20 +8,27 @@
 import SwiftUI
 
 struct AppetizerListView: View {
+    
+    @EnvironmentObject var order: Order
     @StateObject var viewModel = AppetizerListViewModel()
     
     var body: some View {
         ZStack {
             NavigationView {
                 List(viewModel.appetizers) { appetizer in
-                    AppetizerListCell(appetizer: appetizer)
-                        .listRowSeparator(.hidden)
-                        .onTapGesture {
-                            viewModel.selectedAppetizer = appetizer
-                            viewModel.isShowingDetail = true
-                        }
+                    ZStack(alignment: .bottomTrailing) {
+                        AppetizerListCell(appetizer: appetizer)
+                            .onTapGesture {
+                                viewModel.selectedAppetizer = appetizer
+                                
+                                withAnimation {
+                                    viewModel.isShowingDetail.toggle()
+                                }
+                            }
+                        AddButton(action: {order.add(appetizer)})
+                    }
                 }
-                .navigationTitle("🍟 Appetizers")
+                .navigationTitle("Menu items")
                 .listStyle(.plain)
                 .disabled(viewModel.isShowingDetail)
             }
@@ -33,6 +40,7 @@ struct AppetizerListView: View {
             if viewModel.isShowingDetail {
                 AppetizerDetailView(appetizer: viewModel.selectedAppetizer!,
                                     isShowingDetail: $viewModel.isShowingDetail)
+                .transition(.scale(scale: 0.9))
             }
             
             if viewModel.isLoading {

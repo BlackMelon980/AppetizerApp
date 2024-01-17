@@ -39,9 +39,8 @@ struct AppetizerDetailView: View {
             
             Button() {
                 order.add(appetizer)
-                isShowingDetail = false
+                isShowingDetail.toggle()
             } label: {
-                //APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add To Order")
                 Text("$\(appetizer.price, specifier: "%.2f") - Add To Order")
             }
             .modifier(StandardButtonStyle())
@@ -52,7 +51,7 @@ struct AppetizerDetailView: View {
         .cornerRadius(12)
         .shadow(radius: 40)
         .overlay(Button {
-            isShowingDetail = false
+            isShowingDetail.toggle()
         } label: {
             XDismissButton()
         }, alignment: .topTrailing)

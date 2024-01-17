@@ -55,7 +55,7 @@ struct AccountView: View {
                 }
                 .toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
             }
-            .navigationTitle("🙂 Account")
+            .navigationTitle("Account")
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
                     Button("Dismiss") { focusedTextField = nil }

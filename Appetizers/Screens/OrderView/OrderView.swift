@@ -38,7 +38,7 @@ struct OrderView: View {
                                message: "You have no items in your order. \nPlease add an appetizer!")
                 }
             }
-            .navigationTitle("🗒️ Orders")
+            .navigationTitle("Orders")
         }
     }
     
@@ -46,4 +46,5 @@ struct OrderView: View {
 
 #Preview {
     OrderView()
+        .environmentObject(Order())
 }

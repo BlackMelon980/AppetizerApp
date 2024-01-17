@@ -35,6 +35,7 @@
 		98C47F6E2B566F2F0094938B /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C47F6D2B566F2F0094938B /* CustomModifiers.swift */; };
 		98C47F702B567FE30094938B /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C47F6F2B567FE30094938B /* Image+Ext.swift */; };
 		98C47F722B5698170094938B /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C47F712B5698170094938B /* Date+Ext.swift */; };
+		98C47F762B56A4550094938B /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C47F752B56A4550094938B /* AddButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		98C47F6D2B566F2F0094938B /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		98C47F6F2B567FE30094938B /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
 		98C47F712B5698170094938B /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		98C47F752B56A4550094938B /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			children = (
 				989F546D2B50691F0098E63C /* APButton.swift */,
 				989F546F2B5069C80098E63C /* XDismissButton.swift */,
+				98C47F752B56A4550094938B /* AddButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				989F545C2B50137A0098E63C /* RemoteImage.swift in Sources */,
 				98C47F6C2B557DC20094938B /* Order.swift in Sources */,
 				989F54382B4EA00B0098E63C /* AppetizersApp.swift in Sources */,
+				98C47F762B56A4550094938B /* AddButton.swift in Sources */,
 				989F54562B4EF1E20098E63C /* Alert.swift in Sources */,
 				989F54462B4EA49F0098E63C /* AppetizerListView.swift in Sources */,
 				98C47F6E2B566F2F0094938B /* CustomModifiers.swift in Sources */,
