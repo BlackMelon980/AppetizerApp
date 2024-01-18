@@ -15,7 +15,8 @@ struct AppetizerTabView: View {
         TabView {
             AppetizerListView()
                 .tabItem { Label("Home", systemImage: "house") }
-            AccountView()
+            //AccountView()
+            LoginView()
                 .tabItem { Label("Account", systemImage: "person") }
             OrderView()
                 .tabItem { Label("Order", systemImage: "bag") }

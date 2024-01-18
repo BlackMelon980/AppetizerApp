@@ -36,6 +36,7 @@
 		98C47F702B567FE30094938B /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C47F6F2B567FE30094938B /* Image+Ext.swift */; };
 		98C47F722B5698170094938B /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C47F712B5698170094938B /* Date+Ext.swift */; };
 		98C47F762B56A4550094938B /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C47F752B56A4550094938B /* AddButton.swift */; };
+		98C47F782B5945470094938B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C47F772B5945470094938B /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		98C47F6F2B567FE30094938B /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
 		98C47F712B5698170094938B /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		98C47F752B56A4550094938B /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		98C47F772B5945470094938B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			children = (
 				989F54472B4EA4B30098E63C /* AccountView.swift */,
 				989F54712B554CE60098E63C /* AccountViewModel.swift */,
+				98C47F772B5945470094938B /* LoginView.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				98C47F6C2B557DC20094938B /* Order.swift in Sources */,
 				989F54382B4EA00B0098E63C /* AppetizersApp.swift in Sources */,
 				98C47F762B56A4550094938B /* AddButton.swift in Sources */,
+				98C47F782B5945470094938B /* LoginView.swift in Sources */,
 				989F54562B4EF1E20098E63C /* Alert.swift in Sources */,
 				989F54462B4EA49F0098E63C /* AppetizerListView.swift in Sources */,
 				98C47F6E2B566F2F0094938B /* CustomModifiers.swift in Sources */,
