@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct User: Codable {
+struct User: Identifiable, Codable {
+    var id = UUID()
     var firstName = ""
     var lastName = ""
     var email = ""

@@ -10,6 +10,7 @@ import SwiftUI
 struct AccountView: View {
     
     @StateObject var viewModel = AccountViewModel()
+    @ObservedObject var authViewModel: AuthenticationViewModel
     @FocusState private var focusedTextField: FormTextField?
     
     enum FormTextField {
@@ -19,6 +20,7 @@ struct AccountView: View {
     
     var body: some View {
         NavigationView {
+            /*
             Form {
                 Section(header: Text("Personal Info")) {
                     TextField("First name", text: $viewModel.user.firstName)
@@ -48,12 +50,22 @@ struct AccountView: View {
                         Text("Save Changes")
                     }
                 }
+            }*/
+            VStack {
+                Text("Email")
                 
-                Section(header: Text("Requests")) {
-                    Toggle("Extra Napkins", isOn: $viewModel.user.extraNapkins)
-                    Toggle("Frequent Refills", isOn: $viewModel.user.frequentRefills)
+                Button {
+                    Task {
+                        do {
+                            try viewModel.signOut()
+                            authViewModel.showSignInView = true
+                        } catch {
+                            print("Error: \(error)")
+                        }
+                    }
+                } label : {
+                    Text("Log out")
                 }
-                .toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
             }
             .navigationTitle("Account")
             .toolbar {
@@ -74,5 +86,5 @@ struct AccountView: View {
 }
 
 #Preview {
-    AccountView()
+    AccountView(authViewModel: AuthenticationViewModel())
 }

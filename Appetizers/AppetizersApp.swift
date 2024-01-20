@@ -6,11 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
+
 
 @main
 struct AppetizersApp: App {
     
     var order = Order()
+    
+    init() {
+        FirebaseApp.configure()
+    }
     
     var body: some Scene {
         WindowGroup {

@@ -36,6 +36,10 @@ final class AccountViewModel: ObservableObject {
         }
     }
     
+    func signOut() throws {
+        try AuthenticationManager.shared.signOut()
+    }
+    
     
     var isValidForm: Bool {
         guard !user.firstName.isEmpty && !user.lastName.isEmpty && !user.email.isEmpty else {
